@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class UserTest {
 
     // we can have constants because no client code can mutate them!
+    // also we can instantiate the constant in 1 go.
     private static final User KOSTAS = User.builder()
             .name("Kostas")
             .password("secret")
