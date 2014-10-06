@@ -11,14 +11,11 @@ import java.security.NoSuchAlgorithmException;
  * @author konstantine.kougios
  */
 @Immutable
-public class User {
-    private String name, password;
-    private int age;
+public final class User {
+    private final String name, password;
+    private final int age;
 
     // please use the builder
-    private User() {
-    }
-
     private User(Builder builder) {
         name = builder.name;
         password = builder.password;
